@@ -1,0 +1,61 @@
+<!DOCTYPE tiles-definitions PUBLIC
+  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="master"
+		template="/WEB-INF/view/index.jsp">
+		<put-attribute name="title" value="" />
+			<put-attribute name="body" value="" />
+	</definition>
+	
+	<definition name="loginpage"
+		template="/WEB-INF/view/login.jsp">
+	</definition>
+	
+	<definition name="loginerrortpage"
+		template="/WEB-INF/view/loginError.jsp">
+	</definition>
+
+	
+
+	<definition name="home" extends="master">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/view/home.jsp" />
+	</definition>
+	
+	
+	<definition name="Display" extends="master">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/view/display.jsp" />
+	</definition>
+	
+	<definition name="country" extends="master">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/view/country.jsp" />
+	</definition>
+	
+	<definition name="update" extends="master">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/view/update.jsp" />
+	</definition>
+	
+	<definition name="login" extends="loginpage">
+		
+	</definition>
+	
+	<definition name="loginError" extends="loginerrortpage">
+	
+	
+	</definition>
+	
+	<definition name="logout" extends="loginpage">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/view/login.jsp" />
+	
+	</definition>
+	
+	
+	
+	
+	
+</tiles-definitions>
